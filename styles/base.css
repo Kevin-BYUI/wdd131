@@ -1,0 +1,57 @@
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+p {
+    margin: 5px;
+}
+footer {
+    background: steelblue;
+    text-align: center;
+    padding: 20px;
+}
+img {
+    float: right;
+}
+#title {
+    background: steelblue;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+.anchor {
+    color: white;  
+    text-decoration: none; 
+}
+.anchor:hover {
+    color: rgb(4, 128, 0);
+}
+.heading {
+    background: steelblue;
+    padding: 10px;
+    text-align: center;
+   
+}
+.second {
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+  
+}
+.aside {
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+}
+.head3 {
+    text-align: center;
+   
+    
+}
