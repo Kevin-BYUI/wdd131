@@ -2,7 +2,7 @@ const currentYear = new Date().getFullYear();
 document.getElementById('copyright').textContent = `©${currentYear} 🎀 Kevin Ouma Ogutu 🎀 Kenya`;
 
 const lastModifiedDate = document.lastModified;
-document.getElementById('salutation').textContent = `Last Modified: ${lastModifiedDate}`;
+document.getElementById('salutation').textContent = `Las Modified: ${lastModifiedDate}`;
 
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('nav-links');
