@@ -3,71 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Album</title>
-    <meta name="description" content="This page contains temple images for The Church of Jesus Christ of Latter Day Saints">
+    <meta name="description" content="This page shows the beatiful scenary of Mombasa City">
     <meta name="author" content="Kevin Ogutu">
-    <link rel="stylesheet" href="styles/temple.css">
-    <link rel="stylesheet" href="styles/temple-large.css">
-    <script src="scripts/temple.js" defer></script>
+    <title>Mombasa, Kenya</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
 </head>
 <body>
+
     <header>
-        <nav>
-            <h1>Temple Album</h1>
-            <div class="hamburger" id="hamburger">☰</div>
-            <ul id="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">large</a></li>
-                <li><a href="#">Small</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2 class="title">Home</h2>
-        <div class="images">
-            <figure>
-                <img src="images/download (7).jpg" alt="Beltway Temple" width="200">
-                <figcaption>Beltway Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/washington_dc_temple.webp" alt="Jordan Temple" width="200">
-                <figcaption>Jordan Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download.jpg" alt="California Temple" width="200">
-                <figcaption>California Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (1).jpg" alt="Mormon Temple" width="200">
-                <figcaption>Mormon Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (2).jpg" alt="Oakland Temple" width="200">
-                <figcaption>Oakland Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (3).jpg" alt="Phillipines Temple" width="200">
-                <figcaption>Phillipines Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (4).jpg" alt="pittsburgh temple" width="200">
-                <figcaption>Pittsburgh Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (5).jpg" alt="Provo Temple" width="200">
-                <figcaption>Provo Temple</figcaption>
-            </figure>
-            <figure>
-                <img src="images/download (6).jpg" alt="Utah Temple" width="200">
-                <figcaption>Utah Temple</figcaption>
-            </figure>     
+        <div>
+            <h1>Welcome to Mombasa, Kenya</h1>
         </div>
+    </header>
+
+    <main class="overlay-container">
+        <img class="image" src="images/mombasa.jpg" alt="Beautiful view of the City of Mombasa">
+        
+        <section class="overlay weather">
+            <h2>Weather</h2>
+            <p id="weather-description">Sunny</p>
+            <p>Temperature: <span id="temperature"></span></p>
+            <p>Wind Speed: <span id="wind-speed"></span></p>
+            <p>Wind Chill: <span id="wind-chill"></span></p>
+        </section>
+         <section class="overlay info">
+            <h2>Mombasa DATA</h2>
+            <p>Population: 50002</p>
+            <p>Capital: Nairobi</p>
+            <p>Language: Kiswahili, English</p>
+            <p>Currency: Shilling</p>
+            <p>Time Zone: EAT</p>
+            <p>Calling Code: +254</p>
+        </section>
     </main>
+
     <footer>
-        <p id="copyright"></p>
-        <p id="salutation"></p>
+        <p class="copyright">© 2024 🌹 Kevin Ogutu 🌹 Republic of Kenya</p>
+        <span id="currentyear"></span>
     </footer>
+    
 </body>
 </html>
