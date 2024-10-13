@@ -1,47 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This page shows the beatiful scenary of Mombasa City">
-    <meta name="author" content="Kevin Ogutu">
-    <title>Mombasa, Kenya</title>
-    <link rel="stylesheet" href="styles/place.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WDD 131 - Dynamic Web Fundamentals - Awuah Isaac</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Awuah Isaac">
+    <meta name="description" content="Explore the Temples Album featuring beautiful images and details about various temples, including Temple Utah.">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/temples-large.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
-
     <header>
-        <div>
-            <h1>Welcome to Mombasa, Kenya</h1>
-        </div>
+        <h1>Temples Album</h1> 
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" onclick="filterTemples('all')">All Temples</a>
+                    <a href="#" onclick="filterTemples('old')">Old</a>
+                    <a href="#" onclick="filterTemples('new')">New</a>
+                    <a href="#" onclick="filterTemples('large')">Large</a>
+                    <a href="#" onclick="filterTemples('small')">Small</a>
+                </li>
+            </ul> 
+        </nav>
     </header>
-
-    <main class="overlay-container">
-        <img class="image" src="images/mombasa.jpg" alt="Beautiful view of the City of Mombasa">
-        
-        <section class="overlay weather">
-            <h2>Weather</h2>
-            <p id="weather-description">Sunny</p>
-            <p>Temperature: <span id="temperature"></span></p>
-            <p>Wind Speed: <span id="wind-speed"></span></p>
-            <p>Wind Chill: <span id="wind-chill"></span></p>
-        </section>
-         <section class="overlay info">
-            <h2>Mombasa DATA</h2>
-            <p>Population: 50002</p>
-            <p>Capital: Nairobi</p>
-            <p>Language: Kiswahili, English</p>
-            <p>Currency: Shilling</p>
-            <p>Time Zone: EAT</p>
-            <p>Calling Code: +254</p>
-        </section>
+    <main> 
+        <h2>Welcome to the Temples Album</h2>
+        <div id="temple-cards" class="card"></div>
     </main>
-
     <footer>
-        <p class="copyright">© 2024 🌹 Kevin Ogutu 🌹 Republic of Kenya</p>
-        <span id="currentyear"></span>
+        <p>© <span id="currentyear"></span> 🌹 Kevin Ogutu 🌹 Republic of Kenya</p>
+        <span id="lastModified"></span>
     </footer>
-    
+    <script src="scripts/temples.js" defer></script>
 </body>
 </html>
