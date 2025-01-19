@@ -11,6 +11,7 @@ figcaption{
 p{
     color: #fff;
 }
+
 footer{
     text-align: center;
     background-color: #002d6b;
@@ -28,6 +29,21 @@ main{
     border-radius: 10px;
    
 }
+h1{
+    color: #ffffff;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 300;
+}
+img{
+    width: 270px;
+    height: auto;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #ccc;
+     
+}
 
 nav{
     background-color: #002d6b;
@@ -41,6 +57,7 @@ div::before{
     border: none;
     font-size: 30px;
     color: white;
+    cursor: pointer;
 }
 nav ul{
     display: none;
@@ -55,12 +72,13 @@ nav ul li a{
     text-decoration: none;
     color: white;
 }
-h1{
-    color: #ffffff;
-    margin-right: auto;
-    font-size: 2rem;
-    font-weight: 300;
+a:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
 }
+
 div.open::before{
     content: '❎';
     position: absolute;
@@ -82,28 +100,14 @@ h2{
     padding: 10px;
     font-weight: 300;
 }
-a:hover{
-    cursor: pointer;
-    background-color: #ccc;
-    padding: 10px;
-    border-radius: 5px;
-}
+
 .figure{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 15px;
     padding: 10px;
 }
-img{
-    width: 270px;
-    height: auto;
-    aspect-ratio: 6/4;
-    object-fit: cover;
-    border-radius: 8px;
-    background-color: #ccc;
-    
-   
-}
+
 @media(max-width:530px){
     nav ul.open{
         display: flex;
