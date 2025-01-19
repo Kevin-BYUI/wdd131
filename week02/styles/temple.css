@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+figcaption{
+    text-align: start;
+    font-family: "Original Surfer", serif;
+   
+}
+p{
+    color: #fff;
+}
+footer{
+    text-align: center;
+    background-color: #002d6b;
+}
+body{
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: "Noto Sans", serif;
+}
+
+main{
+    max-width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+   
+}
+
+nav{
+    background-color: #002d6b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+div::before{
+    content: '☰';
+    border: none;
+    font-size: 30px;
+    color: white;
+}
+nav ul{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+    color: #ffffff;
+    margin-right: auto;
+    font-size: 2rem;
+    font-weight: 300;
+}
+div.open::before{
+    content: '❎';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border: none;
+    font-size: 30px;   
+    background-color: steelblue;
+}
+nav ul.open{
+    display: flex;
+}
+h2{
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 300;
+}
+a:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+.figure{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+img{
+    width: 270px;
+    height: auto;
+    aspect-ratio: 6/4;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #ccc;
+    
+   
+}
+@media(max-width:530px){
+    nav ul.open{
+        display: flex;
+        flex: 1;
+        
+    }
+    h1.hidden{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .figure{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:500px){
+    .figure{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
