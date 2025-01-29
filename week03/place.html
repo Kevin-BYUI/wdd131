@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <meta name="author" content="Kevin Ouma Ogutu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <meta name="description" content="This page contain information about the data in Kenya and the weather patterns at different times of the day.">
+    <link rel="icon" href="images/favicon.jpeg">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="script/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kenya</h1>
+        <h1 class="red"></h1>
+        <h1 class="green"></h1>
+    </header>
+    <main>
+        <img src="images/kenya-small.webp" 
+             srcset="images/kenya-small.webp 800w,
+                     images/kenya-big.webp 1500w"
+        
+        alt="">
+        <section class="data">
+            <h2>Data</h2>
+            <p>Area: 580,367 sq km</p>
+            <p>Population: 50,000,000</p>
+            <p>Capital: Nairobi</p>
+            <p>Languages: Swahili, English</p>
+            <p>Currency: Kenya Shillings</p>
+            <p>Time Zone: UTC+3</p>
+            <p>Calling Code: +254</p>
+            <p>Internet TLD: .ke</p>
+        </section>
+        <section class="weather">
+            <div>
+                <h2>Weather</h2>
+                <img src="images/weather-mobile-view.svg"
+                     srcset="images/weather-mobile-view.svg 815w,
+                             images/weather-desktop-view.svg 1000w" 
+                
+                alt="emoticon">
+            </div>
+            <p class="temperature"></p>
+            <p>Conditions: Partly Cloudy</p>
+            <p class="speed"></p>
+            <p class="windchill"></p>
+
+        </section>
+       
+    </main>
+    <footer>
+        <p>©<span class="year"></span>🎀 Kevin Ouma Ogutu 🎀 Kenya.</p>
+        <p class="rights"></p>
+        <p class="datemodified"></p>
+       
+    </footer>
+    
+    
+    
+</body>
+</html>

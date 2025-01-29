@@ -1,0 +1,84 @@
+body{
+    padding: 5px;
+    
+}
+main{
+    border: 2px solid green;
+}
+*{
+    font-family: "Lato", serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+h1{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+}
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #003f00;
+    color: white;
+}
+h2{
+    padding: 10px;
+    font-size: 2.5rem;
+}
+img{
+    height: auto;
+    width: 100%;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
+.data{
+    text-align: center;
+}
+.weather{
+    text-align: center;
+}
+.weather img{
+    width: 100px;
+    height: auto;
+}
+.red{
+    background-color: red;
+    margin-top: 5px; 
+}
+.green{
+    background-color: green;
+    margin-top: 5px;  
+}
+@media(min-width: 650px){
+    .data{
+        position: absolute;
+        background-color: white;
+        top: 200px;
+        left: 10px;
+    }
+    h2{
+        background-color: #005200;
+        color: white;
+    }
+    .weather{
+        position: absolute;
+        top: 300px;
+        right: 10px;
+        background-color: white;
+    }
+    .weather img{
+        width: 80px;
+        height: auto;
+        
+    }
+    div{
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        background-color: #005200;
+    }
+    
+}
