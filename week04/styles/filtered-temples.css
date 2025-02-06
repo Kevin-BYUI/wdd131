@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Merriweather", serif;
+}
+h2{
+    text-align: center;
+    color: white;
+    background-color: black;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 300;
+}
+p{
+    color: #fff;
+}
+img:hover {
+    transform: scale(1.05); 
+    transition: 0.3s ease-in-out;
+    filter: brightness(1.1); 
+  }
+footer{
+    text-align: center;
+    background-color: #002d6b;
+}
+main{
+    max-width: 90%;
+    margin: 0 auto;
+}
+h1, h2, h3{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+h1{
+    color: #ffffff;
+    margin-right: auto;
+    font-size: 2rem;
+    
+}
+img{
+    width: 270px;
+    height: auto;
+    aspect-ratio: 2/2;
+    object-fit: cover;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+nav{
+    background-color: #002d6b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    max-width: 100%;
+    padding: 10px;
+}
+nav ul{
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    list-style-type: none;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul.open{
+    display: flex;
+}
+a:hover{
+    cursor: pointer;
+    background-color: #044196;
+    padding: 10px;
+}
+.span::before{
+    content: '☰';
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.span.open::before{
+    content: '❎';
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border: none;
+    font-size: 30px;   
+    background-color: steelblue;
+}
+@media(max-width:530px){
+    nav ul.open{
+        display: flex;
+        flex: 1;
+        
+    }
+    h1.hidden{
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.container figure {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.container h3 {
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.container p {
+    color: black;
+    font-size: 1rem;
+}
+.before-1900{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+.before-1900 figure{
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.before-1900 h3{
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.before-1900 p{
+    color: black;
+    font-size: 1rem;
+}
+.after-2000{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+.after-2000 figure{
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.after-2000 h3{
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.after-2000 p{
+    color: black;
+    font-size: 1rem;
+}
+.large{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+.large figure{
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.large h3{
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.large p{
+    color: black;
+    font-size: 1rem;
+}
+.small{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+.small figure{
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+.small h3{
+    color: black;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+.small p{
+    color: black;
+    font-size: 1rem;
+}
