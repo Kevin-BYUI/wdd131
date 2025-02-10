@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <meta name="description" content="This page contail all the features and best practices for HTML Forms">
+    <meta name="author" content="Kevin Ogutu-WDD131; BYU-Idaho">
+    <link rel="icon" href="images/form.jpeg">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <form action="review.html" method="get" class="wf">
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <fieldset class="field1">
+                <legend class="legend1">Product Evaluation</legend>
+                <div class="product-name">
+                    <label for="product-list">Product Name</label>
+                    <select id="product-list" required>
+                        <option value="">Select a Product...</option>
+                    </select>
+                </div> 
+                <div class="overal">Overal Rating</div>
+                <div class="rating">  
+                    <label>
+                    <div>    
+                        <input type="radio" name="star" value="star1" id="rate1" required>
+                        <label for="rate1">♦</label>
+                    </div>
+                    <div> 
+                        <input type="radio" name="star" value="star2" id="rate2">
+                        <label for="rate2">♦♦</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="star" value="star3" id="rate3">
+                        <label for="rate3">♦♦♦</label>
+                    </div>
+                    <div>    
+                        <input type="radio" name="star" value="star4" id="rate4">
+                        <label for="rate4">♦♦♦♦</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="star" value="star5" id="rate5">
+                        <label for="rate5">♦♦♦♦♦</label>
+                    </div>
+                </label>
+                </div>
+                <div>
+                    <label for="date">Date of Installation <input type="date" name="date" id="date" required></label>
+                </div>
+            </fieldset>
+            <fieldset class="field2">
+                <legend class="legend2">Customer Feedback</legend>
+                <div class="checkbox">
+                    <p>Which features did you find useful in the product? (Check all that apply)</p>
+                    <div>
+                        <label for="durable"><input type="checkbox" name="durability" value="durability" id="durable"> Durability</label>
+    
+                    </div>
+                    <div>
+                        <label for="access"><input type="checkbox" name="accessibility" value="accessibility" id="access"> Ease of Access</label>
+                    </div>
+                    <div>
+                        <label for="perform"><input type="checkbox" name="performance" value="performance" id="perform"> Performance</label>
+                    </div>
+                    <div>
+                        <label for="design"><input type="checkbox" name="design" value="design" id="design"> Design</label>
+                    </div>   
+                </div>
+                <div class="rev">
+                    <label for="text">Written Review (Optional)</label>
+                    <textarea name="textarea" id="text"></textarea>
+                </div>
+                <div>
+                    <label for="name" class="names">Your Name(Optional)</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <input type="submit" value="Post Review">
+            </fieldset>
+        </main>  
+        <footer>
+           <p>©<span class="year"></span>🎀 Kevin Ogutu 🎀 Mombasa, Kenya 🎀</p>
+           <p class="right"></p>
+           <p class="modified"></p>
+        </footer>     
+    </form>  
+</body>
+
+</html>
