@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="This website contain all the information about contacting the Ogutu Family">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <meta name="author" content="Kevin Ogutu-BYU Idaho">
+    <link rel="icon" href="images/IMG_20241223_152755.jpg">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="script/contact.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>The Ogutu Empire</h1>
+        <nav>
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="contact.html">Contact Us</a></li>  
+            </ul>
+        </nav>
+        <span class="material-symbols-outlined menu-icon">menu</span>
+        <span class="material-symbols-outlined close-icon hidden">close</span>
+        
+    </header>
+    
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form action="feedback.html" method="get">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+                <input type="submit" value="Contact Us">
+            </form>
+            <section class="contact-info">
+                <h3>Get in Touch</h3>
+                <p><strong>Phone:</strong> +254 700 000 000</p>
+                <p><strong>Email:</strong> contact@ogutuempire.com</p>
+                <p><strong>Address:</strong> Mtongwe, Likoni, Mombasa</p>
+            </section>
+            
+        
+            <section class="map-section">
+                <h3>Our Location</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31709.416949303292!2d39.64351793436436!3d-4.088573034388584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x184013afd282b9d1%3A0x18a971e6de012c93!2sMtongwe%2C%20Mombasa!5e0!3m2!1sen!2ske!4v1692800000000!5m2!1sen!2ske" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </section>
+        
+            <section class="social-media">
+                <h3>Follow Us</h3>
+                <a href="http://www.facebook.com" class="social-icon facebook">Facebook</a>
+                <a href="http://www.twitter.com" class="social-icon twitter">Twitter</a>
+                <a href="http://www.instagram.com" class="social-icon instagram">Instagram</a>
+                <a href="http://www.linkedIn.com" class="social-icon linkedin">LinkedIn</a>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p class="footer-c">©<span class="yearC"></span> The Ogutu Empire. All Rights Reserved </p>
+        <p class="content-c"></p>
+    </footer>   
+
+    
+</body>
+</html>

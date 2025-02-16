@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Layout */
+body {
+    font-family: "Roboto", serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #2F3A4F;
+    padding: 10px 20px;
+}
+
+nav {
+    background-color: #2E3B4E;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff;
+    background-color: #2E3B4E;
+    padding: 20px;
+    margin: 0;
+}
+
+h2, h3,
+nav ul li {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+}
+
+nav ul {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav ul li a:hover {
+    background-color: #8892a1;
+    padding: 5px;
+    color: black;
+    border-radius: 6px;
+}
+
+.menu-icon,
+.close-icon {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('images/family.jpeg') no-repeat center center/cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    z-index: 1;
+    max-width: 600px;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #2980b9;
+}
+
+/* Intro Section */
+.intro-section {
+    padding: 40px;
+    text-align: center;
+    background: #f4f4f9;
+}
+
+.intro-section h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.intro-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.family-photo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.family-photo img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Values Section */
+.values-section {
+    padding: 40px;
+    background: #fff;
+    text-align: center;
+}
+
+.values-section h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.values-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.values-list li {
+    background: #e8eaf6;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (min-width: 600px) {
+    .menu-icon,
+    .close-icon {
+        display: none;
+    }
+    header {
+        justify-content: flex-end;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    h1 {
+        font-size: 2rem;
+        display: block;
+        margin-right: auto;
+    }
+    .events-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f4f4f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* Events Section */
+.events-section h2 {
+    grid-column: 1/2;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.event-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Event Images */
+.event-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Event Buttons */
+.event-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.event-button:hover {
+    background-color: #2980b9;
+}
